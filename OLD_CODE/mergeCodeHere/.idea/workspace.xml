@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="71ff1495-a296-47d0-81f2-28b32083d56f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../tb/fakeNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tb/other.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tb/tbDemo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tb/toolBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tbMerge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../propertySheet/CircleNode.js" beforeDir="false" afterPath="$PROJECT_DIR$/../propertySheet/CircleNode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../propertySheet/graphed.js" beforeDir="false" afterPath="$PROJECT_DIR$/../propertySheet/graphed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tbDemo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tbDemo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tbDemo/.idea/tbDemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tbDemo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tbDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tbDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tbDemo/framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tb/framework.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tbDemo/other.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tbDemo/tbDemo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../tb/tbDemo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tbDemo/tbDemo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tbDemo/toolBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tbDemo/toolBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tbDemo/toolbarbutton.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tbDemo/toolbarbutton.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphed.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-226">
+              <caret line="49" column="20" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!block;n#createCircleNode#0" />
+                <element signature="n#!!block;n#drawNodeInToolBar2#0" />
+                <element signature="e#2215#2299#0" />
+                <element signature="n#!!block;n#createEdge#0" />
+                <element signature="n#!!block;n#getClientRect#0" />
+                <element signature="n#!!block;n#createSolidEdge#0" />
+                <element signature="n#!!block;n#createDottedEdge#0" />
+                <element signature="n#!!block;n#drawGrabber#0" />
+                <element signature="n#!!block;n#addChildNode#0" />
+                <element signature="n#!!block;n#createChildNode#0" />
+                <element signature="n#!!block;n#createObjectNode#0" />
+                <element signature="n#!!block;n#createNoteNode#0" />
+                <element signature="n#!!block;n#createDiamondNode#0" />
+                <element signature="n#!!block;n#createCircleNode#0" />
+                <element signature="n#!!block;n#modify#0" />
+                <element signature="n#!!block;n#showProps#0" />
+                <element signature="n#!!block;n#showProperties#0" />
+                <element signature="n#!!block;n#connect#0;n#Graph#0" />
+                <element signature="n#!!block;n#selectTool#0;n#Graph#0" />
+                <element signature="n#!!block;n#add#0;n#Graph#0" />
+                <element signature="n#!!block;n#findNode#0;n#Graph#0" />
+                <element signature="n#!!block;n#getNodeArray#0;n#Graph#0" />
+                <element signature="n#!!block;n#getEdgeArray#0;n#Graph#0" />
+                <element signature="n#!!block;n#findEdge#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphed.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="774">
+              <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/graphed.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>showProperties</find>
+      <find>grabber</find>
+      <find>nodeToDraw</find>
+      <find>diamond</find>
+      <find>createDiamondNode</find>
+      <find>dragStartBounds</find>
+      <find>repaint</find>
+      <find>transform</find>
+      <find>panel</find>
+      <find>toolbar</find>
+      <find>drawToolBar</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/graphed.css" />
+        <option value="$PROJECT_DIR$/graphed.js" />
+        <option value="$PROJECT_DIR$/graphed.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="322" />
+    <option name="y" value="123" />
+    <option name="width" value="1311" />
+    <option name="height" value="878" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="mergeCodeHere" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/project-151/spenceredwards123.bitbucket.io/mergeCodeHere" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Templates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="graphed.html" type="JavascriptDebugType" uri="file://$PROJECT_DIR$/graphed.html">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71ff1495-a296-47d0-81f2-28b32083d56f" name="Default Changelist" comment="" />
+      <created>1556358426488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556358426488</updated>
+      <workItem from="1556358428877" duration="1238000" />
+      <workItem from="1556427553600" duration="1598000" />
+      <workItem from="1556511479183" duration="4376000" />
+      <workItem from="1556540711538" duration="15044000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22256000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2406672" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/graphed.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-226">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!block;n#createCircleNode#0" />
+            <element signature="n#!!block;n#drawNodeInToolBar2#0" />
+            <element signature="e#2215#2299#0" />
+            <element signature="n#!!block;n#createEdge#0" />
+            <element signature="n#!!block;n#getClientRect#0" />
+            <element signature="n#!!block;n#createSolidEdge#0" />
+            <element signature="n#!!block;n#createDottedEdge#0" />
+            <element signature="n#!!block;n#drawGrabber#0" />
+            <element signature="n#!!block;n#addChildNode#0" />
+            <element signature="n#!!block;n#createChildNode#0" />
+            <element signature="n#!!block;n#createObjectNode#0" />
+            <element signature="n#!!block;n#createNoteNode#0" />
+            <element signature="n#!!block;n#createDiamondNode#0" />
+            <element signature="n#!!block;n#createCircleNode#0" />
+            <element signature="n#!!block;n#modify#0" />
+            <element signature="n#!!block;n#showProps#0" />
+            <element signature="n#!!block;n#showProperties#0" />
+            <element signature="n#!!block;n#connect#0;n#Graph#0" />
+            <element signature="n#!!block;n#selectTool#0;n#Graph#0" />
+            <element signature="n#!!block;n#add#0;n#Graph#0" />
+            <element signature="n#!!block;n#findNode#0;n#Graph#0" />
+            <element signature="n#!!block;n#getNodeArray#0;n#Graph#0" />
+            <element signature="n#!!block;n#getEdgeArray#0;n#Graph#0" />
+            <element signature="n#!!block;n#findEdge#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

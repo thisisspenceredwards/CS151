@@ -1,0 +1,12 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="300" height="300"
+     xmlns="http://www.w3.org/2000/svg">
+
+  
+<polygon points="100 100 180 100 180 120 200 120 200 170 100 170 " fill="wheat" stroke="black" stroke-width="2"/>
+  <line x1="180" y1="100" x2="200" y2="120"  stroke-width="2" style="stroke:black" />
+
+</svg>
+
+

@@ -1,0 +1,78 @@
+#graphpanel {
+    border: solid black thin;
+<<<<<<< HEAD
+}
+
+=======
+    height: 750px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+table {
+    border-radius: 10px;
+}
+/* for tables */
+.ObjectNodeCss{
+    background-color : white;
+    border: solid black thin;
+    position: absolute;
+    z-index: 10;
+}
+
+
+.NoteNodeCss {
+    background-color : yellow;
+    border: solid black thin;
+}
+/* tool bar */
+.toolbar {
+    background-color: blue;
+    border: solid black thin;
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#toolBar {
+    border: solid black thin;
+    height: 10%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* all for top menu*/
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.li {
+    float: left;
+}
+
+.a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#wrapper {
+    width: 100%;
+    text-align:center;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:0px;
+    background-color: yellow;
+    padding:0px;
+}
+>>>>>>> f9f6d57fd47d460bb3bfd295f6d726106c1e74dc

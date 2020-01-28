@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<p>
+How the Project Works ?
+</p>
+
+<p>
+This project is a general graph framework, because :
+</p>
+
+<p>
+it's easy to add new modes or nodes
+</p>
+
+<p>
+In this project, we used 
+</p>
+
+<p>Adapter Pattern 
+: To append the button to the toolBar panel. Since we used the createNode method that already wrote, the svg elements that we draw in the toolBar doesn't have any listener. So we also use this pattern to adapter a node to a button. </p>
+
+
+<p2>Decorator Pattern 
+: When using the creataNode method we wrote before, it's hard to dicrectly draw the node in the another panel. (We are using graphPanel and toolBarPanel) So we use this pattern to add new method that can draw in any panel that pass in as a parameter. 
+We didn't rewrite the Node structle, but we add a new function.</p>
+
+<p2>Prototype Pattern 
+: When drawing a the node on the graphPanel, we found it hard to directly call the method createNode. Even if we know which icon is selected in the toolBar, It's difficult to use reflection pattern to go back and call methods. So we use the clone method to clone the node we selected. </p>
+</body>
+</html>

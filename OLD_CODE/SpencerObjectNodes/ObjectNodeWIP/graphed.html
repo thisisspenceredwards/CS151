@@ -1,0 +1,96 @@
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta http-equiv='content-type' content='text/html; charset=UTF-8'/>
+    <title>Graph Editor</title>
+    <link href='graphed.css' rel='stylesheet' type='text/css'/>
+    <script src='graphed.js' type='text/javascript'></script>
+</head>
+<body>
+<div>
+    <svg id="graphpanel"  width = 100% height = 100% xmlns="http://www.w3.org/2000/svg">
+    </svg>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML inside SVG</title>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div class = "overlay" id = "overLay" >
+<svg xmlns="http://www.w3.org/2000/svg"  id = "overLaysvg">
+    <foreignobject id = "forId" class="node" x="10" y="10" width="180" height="200" >
+        <div style="border:1px black solid", contenteditable="true">Name Of Object here</div>
+        <table id="sampleTable" border="1">
+            <input type="button" style="height:25px; width:180px" onclick="insert_Row()" value="Insert row" >
+            <tr><td style="width: 180px"><div contenteditable="true">Empty Field</div></td><tr>
+        </table><br>
+    </foreignobject>
+</svg>
+</div>
+<script language="javascript">
+  let z = 0
+  function insert_Row()
+  {
+    if (z < 3) {
+      console.log("Insert_Row")
+      let x
+      x = document.getElementById('sampleTable').insertRow(0)
+      let y = x.insertCell(0);
+      y.contentEditable = 'true'
+      y.innerHTML = "New Field";
+      z++
+    }
+  }
+</script>
+</body>
+</html>
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML inside SVG</title>
+    <style type="text/css"></style>
+    <script language="javascript">
+      function insert_Row()
+      {
+        let x
+        x = document.getElementById('sampleTable').insertRow(-1)
+        let y = x.insertCell(-1);
+        y.contentEditable='true'
+        y.innerHTML="New Field";
+      }
+    </script>
+</head>
+<body>
+<svg  xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="180" height="300" stroke= "black" fill="aliceblue"></rect>
+
+    <foreignobject class="node" x="1" y="0" width="180" height="400">
+        <div style="border:1px black solid", contenteditable="true">Name Of Object here</div>
+        <table id="sampleTable" border="1">
+            <input type="button" style="height:25px; width:180px" onclick="insert_Row()" value="Insert row">
+            <tr><td style="width: 180px"><div contenteditable="true">Empty Field</div></td><tr>
+        </table><br>
+
+    </foreignobject>
+
+</svg>
+</body>
+
+
+</html>
+

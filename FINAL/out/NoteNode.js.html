@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: NoteNode.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: NoteNode.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ *
+ * @returns {{contains: contains, setColor: setColor, toolDraw: toolDraw, getText: (function(): string), getConnectionPoint: getConnectionPoint, clone: (function(): {contains: contains, setColor: setColor, toolDraw: toolDraw, getText: (function(): string), getConnectionPoint: getConnectionPoint, clone, getColor: (function(): *), draw: draw, getBounds: (function(): {x: *, width: undefined, y: *, height: undefined}), translate: translate, setText: setText}), getColor: (function(): *), draw: draw, getBounds: (function(): {x: *, width: undefined, y: *, height: undefined}), translate: translate, setText: setText}}
+ */
+function createNoteNode() {
+  let x = 0
+  let y = 0
+  let color = 'bisque'
+  let table = undefined
+  let width = undefined
+  let height = undefined
+
+  /**
+   * updates the bounds of the table
+   */
+  function updateWidthHeight()
+  {
+    let rect = getClientRect(table.id)
+    width = rect.width
+    height = rect.height
+  }
+  const container = document.getElementById('nodeContainer')
+  table = document.createElement('table')
+  table.id = 'noteNodeTable'
+  table.className = 'noteNodeTable'
+  table.style.backgroundColor = color
+  const row1 = table.insertRow()//create row
+  row1.id = "row"
+  row1.classname = "row"
+  const cell1 = row1.insertCell()
+  //cell1.setAttribute("contenteditable", "true")
+  cell1.innerHTML = "Note"
+  //container.appendChild(table)
+  updateWidthHeight()
+  return {
+    /**
+     * return the bounds of the table
+     * @returns {{x: *, width: undefined, y: *, height: undefined}}
+     */
+    getBounds: () => {
+      //updateWidthHeight()
+      return {
+        x: x,
+        y: y,
+        width: width,
+        height: height
+      }
+    },
+    /**
+     *
+     * @param p if point p is within the object
+     * @returns {boolean}
+     */
+    contains: p => {
+      updateWidthHeight()
+      if(p.x >= x &amp;&amp; p.x &lt;= (x+width) &amp;&amp; p.y >= y &amp;&amp; p.y &lt;= y+height)
+        return true
+      else
+        return false
+    },
+    /**
+     *
+     * @param dx distance to shift the x
+     * @param dy distance to shift the y
+     */
+    translate: (dx, dy) => {
+      x += dx
+      y += dy
+    },
+    /**
+     * Draws and adds the table to the graph div
+     */
+    draw: () => {
+      table.style.left = x   + 'px'
+      table.style.top = y   + 'px'
+      table.style.width = width + 'px'
+      table.style.height = height + 'px'
+      container.appendChild(table)
+    },
+    /**
+     * draws the table on the icon
+     * @param anypanel the div for the toolbar
+     */
+    toolDraw: (anypanel) => {
+	  const table = document.createElementNS('http://www.w3.org/2000/svg', 'rect')
+          table.setAttribute('x', x - 5)
+	  table.setAttribute('y', y - 5)
+          table.setAttribute('width', 30)
+          table.setAttribute('height', 25)
+	  table.setAttribute('rx', 5)
+          table.setAttribute('stroke', 'black')
+	  table.setAttribute('stroke-width', 1 + 'px')
+	  table.setAttribute('fill', 'bisque')
+          anypanel.appendChild(table)	  
+      },
+    /**
+     *
+     * @returns {{contains: contains, setColor: setColor, toolDraw: toolDraw, getText: (function(): string), getConnectionPoint: getConnectionPoint, clone: (function(): {contains: contains, setColor: setColor, toolDraw: toolDraw, getText: (function(): string), getConnectionPoint: getConnectionPoint, clone, getColor: (function(): *), draw: draw, getBounds: (function(): {x: *, width: undefined, y: *, height: undefined}), translate: translate, setText: setText}), getColor: (function(): *), draw: draw, getBounds: (function(): {x: *, width: undefined, y: *, height: undefined}), translate: translate, setText: setText}}
+     */
+    /**
+     *
+     * @returns {{contains: contains, setColor: setColor, toolDraw: toolDraw, getText: (function(): string), getConnectionPoint: getConnectionPoint, clone: (function(): {contains: contains, setColor: setColor, toolDraw: toolDraw, getText: (function(): string), getConnectionPoint: getConnectionPoint, clone, getColor: (function(): *), draw: draw, getBounds: (function(): {x: *, width: undefined, y: *, height: undefined}), translate: translate, setText: setText}), getColor: (function(): *), draw: draw, getBounds: (function(): {x: *, width: undefined, y: *, height: undefined}), translate: translate, setText: setText}}
+     */
+    clone: ()=>{
+	return createNoteNode(0,0)
+    },
+    /**
+     *
+     * @param p point to compare to
+     * @returns {{x: number, y: *}|{x: *, y: number}|{x: *, y: *}}
+     */
+    getConnectionPoint: p=>{
+      let centerX = x + width /2
+      let centerY = y + height / 2
+      let dx = p.x - centerX
+      let dy = p.y - centerY
+      if(dx &lt; -dy &amp;&amp; dx &lt; dy)
+	     return {x: centerX - (width / 2), y: centerY}
+	 else if(dx >= dy &amp;&amp; dx  >= -dy)
+	     return {x: centerX + (width / 2), y: centerY}
+	 else if(dx >= -dy &amp;&amp; dx &lt; dy)
+	     return {x: centerX, y: centerY + (height / 2)}
+	 else 
+	     return {x: centerX, y: centerY - (height / 2)}
+    }, 
+    /**
+     *
+     * @param c is the color to set the object to
+     */
+    setColor: c => { table.style.backgroundColor = c },
+    /**
+     *
+     * @returns {*} the color of the object
+     */
+    getColor: () => { return color },
+    /**
+     *
+     * @param text sets row within the object to the text
+     */
+    setText: text => { cell1.innerHTML = ''
+      cell1.innerHTML = text },
+    /**
+     *
+     * @returns {string} get the text within the object
+     */
+    getText: () => { return cell1.innerHTML },
+  }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#clone">clone</a></li><li><a href="global.html#contains">contains</a></li><li><a href="global.html#createNoteNode">createNoteNode</a></li><li><a href="global.html#draw">draw</a></li><li><a href="global.html#getBounds">getBounds</a></li><li><a href="global.html#getColor">getColor</a></li><li><a href="global.html#getConnectionPoint">getConnectionPoint</a></li><li><a href="global.html#getText">getText</a></li><li><a href="global.html#setColor">setColor</a></li><li><a href="global.html#setText">setText</a></li><li><a href="global.html#toolDraw">toolDraw</a></li><li><a href="global.html#translate">translate</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.1</a> on Mon May 06 2019 19:24:42 GMT-0700 (Pacific Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

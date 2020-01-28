@@ -1,0 +1,71 @@
+#graphpanel {
+    border: solid black thin;
+    height: 320px;
+    width: 100%;    
+}
+
+#propertyEditor{
+    border: solid black thin;  
+    width: 20%;
+    padding: 5px;
+
+}
+
+
+table {
+    border-radius: 10px;
+}
+
+.nodeContainer{
+    position: absolute;
+}
+/* for tables */
+.row{
+    width: 500px;
+    position: absolute;
+    text-align: center;
+    white-space: nowrap;
+    column-span: 3;
+}
+
+
+.ObjectNodeTable{
+
+    empty-cells: show;
+    text-align: center;
+    white-space: nowrap;
+    background-color : white;
+    border: solid black thin;
+    position: absolute;
+    z-index: 10;
+
+}
+.childNodeTable{
+    background-color : white;
+    border: solid black thin;
+    position: absolute;
+}
+
+.noteNodeTable{
+    text-align: center;
+    background-color : bisque;
+    border: solid black thin;
+    position: absolute;
+}
+
+/* tool bar */
+.toolbar {
+    background-color: blue;
+    border: solid black thin;
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#toolBar {
+    border: solid black thin;
+    height: 10%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
